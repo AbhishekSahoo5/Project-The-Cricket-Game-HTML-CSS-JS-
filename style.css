@@ -1,0 +1,132 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+}
+body{
+    text-align: center;
+    background-color: rgb(32, 104, 238);
+}
+h1{
+    background-color: blanchedalmond;
+    padding-top:0px;
+}
+.playButton img{
+    height:180px;
+    border:3px solid black;
+    border-radius:40%;
+    
+}
+.playButton{
+    border:3px solid black;
+    border-radius:50%;
+    margin:10px;
+}
+
+p{
+    font-size: xx-large;
+}
+
+table tr td {
+    border:2px solid black;
+    padding:5px;
+}
+table{
+    border-collapse: collapse;
+    background-color: chartreuse;
+
+}
+table th{
+    border:2px solid black;
+    padding:10px;
+}
+#rules{
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    border:10px solid black;
+    padding:10px;
+    width:70%;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+#winning-scene{
+    color:rgb(255, 255, 255);
+    margin-top:30px;
+    margin-bottom: 20px;;
+}
+#letsplay-heading{
+    font-size: xx-larger;
+    font-weight: bolder;
+    margin:50px 50px 10px 50px;
+    background-color: blanchedalmond;
+}
+h1 img{
+    height:70px;
+}
+#result{
+    display:flex;
+    justify-content: space-evenly;
+    width:70%;
+    margin:auto;
+    flex-wrap: wrap;
+    padding:7px;
+    border-radius: 10px;
+    background-color:black;
+ }
+ #no-wins-lost{
+    background-color: aqua;
+    padding:10px;
+    font-size: large;
+    border-radius: 10px;
+    border:2px double black;
+ }
+ #resultStatus{
+    background-color: rgb(210, 210, 48);
+    display:flex;
+    align-items: center;
+    padding:10px;
+    font-size: x-large;
+    border-radius: 10px;
+    border:2px double black;
+ }
+ #win-percent{
+    background-color: blueviolet;
+    display:flex;
+    align-items: center;
+    padding:10px;
+    font-size: x-large;
+    border-radius: 10px;
+    border:2px double black;
+ }
+ #yourChoice{
+    background-color: fuchsia;
+ }
+ #computerChoice{
+    background-color: rgb(37, 220, 53);
+ }
+ .various-result{
+    display:flex;
+    align-items: center;
+    padding:10px;
+    font-size: x-large;
+    border-radius: 10px;
+    border:2px double black;
+ }
+ #byName{
+    background-color: blanchedalmond;
+    padding:5px;
+    font-weight:bold;
+    margin-top:10px;
+
+ }
+ #reset{
+    height:100px;
+    width:100px;
+    position:relative;
+    right:-100px;
+    bottom:100px;
+    font-size: x-large;
+ }
+
+
