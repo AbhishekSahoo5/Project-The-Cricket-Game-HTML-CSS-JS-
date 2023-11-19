@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cricket Game</title>
+    
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     <h1>
+            <img src="Game.png" alt="Cricket Game logo">The Cricket Game<img src="Game.png" alt="Cricket Game logo">
+        </h1> 
+        
+    <h2 id="winning-scene">Winning Scenarios</h2>
+    <div id="rules">
+        <div>
+        <table>
+            <tr>
+                <th>Computer</th>
+                <th>You</th>
+                <th>Result</th>
+            </tr>
+            <!-- Bat -->
+            
+                <div class="rule-row">
+                    <tr>
+                        <td rowspan="3">Bat</td>
+                        <td>Bat</td>
+                        <td>It's a tie</td>
+                    </tr>
+                    <tr>
+                        <td>Ball</td>
+                        <td>You Lost</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>wicket</td>
+                        <td>You Won</td>
+                    </tr>
+                </div>
+        </table></div>
+        <div>
+        <table>
+            <tr>
+                <th>Computer</th>
+                <th>You</th>
+                <th>Result</th>
+            </tr>
+                <!-- Ball -->
+                <div class="rule-row">
+                    <tr>
+                        <td rowspan="3">Ball</td>
+                        <td>Ball</td>
+                        <td>It's a tie</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Bat</td>
+                        <td>You Won</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>wicket</td>
+                        <td>You Lost</td>
+                    </tr>
+                </div>
+        </table></div>
+        <div>
+            <table>
+                <tr>
+                    <th>Computer</th>
+                    <th>You</th>
+                    <th>Result</th>
+                </tr>
+                <!--Wicket  -->
+                <div class="rule-row">
+                    <tr>
+                        <td rowspan="3">Wicket</td>
+                        <td>Wicket</td>
+                        <td>It's a tie</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Bat</td>
+                        <td>You Lost</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Ball</td>
+                        <td>You Won</td>
+                    </tr>
+                </div>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Status</th>
+                    <th>Points</th>
+                </tr>
+                <!--Wicket  -->
+                <div class="rule-row">
+                    <tr>
+                        <td>win</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>lost</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Tie</td>
+                        <td>0.5</td>
+                    </tr>
+                </div>
+            </table>
+        </div>
+    </div>
+
+
+
+    <p id="letsplay-heading">Let's PLAY</p>
+
+    
+    <div id="result">
+        <div id="no-wins-lost" class="various-result"></div>
+        <div id="win-percent" class="various-result"></div>
+        <div id="yourChoice" class="various-result"></div>
+        <div id="resultStatus" class="various-result"></div>
+        <div id="computerChoice" class="various-result"></div>
+
+    </div>
+    
+    <div id="user-move"></div>
+    <div class="computer-move"></div>
+    <div id="result-move"></div>
+    <div class="score"></div>
+
+    <button class="playButton" onclick="
+        let yourChoice='Bat';
+        let computerChoice=generateComputerChoice();
+        let resultMsg=getResult(yourChoice,computerChoice);
+        alertMsg(yourChoice,computerChoice,resultMsg);
+    
+    
+    "><img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200/lsci/db/PICTURES/CMS/267700/267790.jpg" alt="Bat"> 
+    <h3>Bat</h3>    
+    </button>
+
+    <button class="playButton" onclick="
+        yourChoice='Ball';
+        computerChoice=generateComputerChoice();       
+        resultMsg=getResult(yourChoice,computerChoice);
+        alertMsg(yourChoice,computerChoice,resultMsg);
+
+        "><img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2019/03/10/800414-jasprit-bumrah.jpg" alt="Ball">
+            <h3>Ball</h3></button>
+
+
+    <button class="playButton"
+    onclick="
+    yourChoice='Wicket';
+
+    computerChoice=generateComputerChoice();
+    resultMsg=getResult(yourChoice,computerChoice);
+    alertMsg(yourChoice,computerChoice,resultMsg);  
+
+    "><img src="https://images.news18.com/ibnlive/uploads/2017/09/dhoni.jpg?im=FitAndFill=(1200,675)?im=FitAndFill,width=1200,height=675"alt="Wcicket">
+    <h3>Wicket</h3></p> </button>
+
+   
+    
+
+    <div id="byName">Created By:- Abhishek sahoo</div>
+
+    <script src="script.js"></script>
+
+
+    
+
+</body>
+</html>
